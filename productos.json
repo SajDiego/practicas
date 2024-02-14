@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Rayzen 5",
+    "description": "unos de los buenos",
+    "price": 150,
+    "thumbnail": "thumbnail.jpg",
+    "code": "223",
+    "stock": 100
+  },
+  {
+    "id": 2,
+    "title": "Rayzen 7",
+    "description": "unos de los mejores",
+    "price": 250,
+    "thumbnail": "thumbnail.jpg",
+    "code": "253",
+    "stock": 100
+  },
+  {
+    "id": 3,
+    "title": "rayzen 9",
+    "description": "de los mejores",
+    "price": 350,
+    "thumbnail": "thumbnail.jpg",
+    "code": "25694",
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "title": "mother board",
+    "description": "super necesarias",
+    "price": 150,
+    "thumbnail": "thumbnail.jpg",
+    "code": "25894",
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "title": "monitor gamer",
+    "description": "demasiado caros",
+    "price": 350,
+    "thumbnail": "thumbnail.jpg",
+    "code": "2584",
+    "stock": 10
+  }
+]
