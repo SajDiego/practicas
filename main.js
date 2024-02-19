@@ -62,7 +62,7 @@ class ProductManager {
             }
             return false;
         } catch (error) {
-            console.error("Error al actualizar el producto:", error);
+            console.error("verifique los datos antes de intentar actualizar el producto:", error);
             return false;
         }
     }
@@ -78,7 +78,7 @@ class ProductManager {
             }
             return false;
         } catch (error) {
-            console.error("Error al eliminar el producto:", error);
+            console.error("no se puede eliminar el producto:", error);
             return false;
         }
     }
@@ -91,15 +91,15 @@ const respuesta = async () => {
         let productos = await ProductoManager.getProduct();
         console.log(productos);
     } catch (error) {
-        console.error("Error al obtener los productos:", error);
+        console.error("Productos no encontrados:", error);
     }
 };
 
 (async () => {
     try {
-        await ProductoManager.addProduct("teclado", "para jugar juegos", 60, "thumbnail.jpg", "2844", 10);
-        await ProductoManager.updateProduct(1, { price: 300 });
-        await ProductoManager.deleteProduct(4);
+        await ProductoManager.addProduct("teclado", "para jugar juegos", 60, "thumbnail.jpg", "2844", 10); //agregar producto
+        await ProductoManager.updateProduct(1, { price: 300 }); // actualizar algun producto por id
+        await ProductoManager.deleteProduct(4); // borrar producto por id
         respuesta();
     } catch (error) {
         console.error("Error en la ejecución del proceso:", error);
