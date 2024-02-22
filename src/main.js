@@ -84,24 +84,4 @@ class ProductManager {
     }
 }
 
-let ProductoManager = new ProductManager("./productos.json");
-
-const respuesta = async () => {
-    try {
-        let productos = await ProductoManager.getProduct();
-        console.log(productos);
-    } catch (error) {
-        console.error("Productos no encontrados:", error);
-    }
-};
-
-(async () => {
-    try {
-        await ProductoManager.addProduct("teclado", "para jugar juegos", 60, "thumbnail.jpg", "2844", 10); //agregar producto
-        await ProductoManager.updateProduct(1, { price: 300 }); // actualizar algun producto por id
-        await ProductoManager.deleteProduct(4); // borrar producto por id
-        respuesta();
-    } catch (error) {
-        console.error("Error en la ejecución del proceso:", error);
-    }
-})();
+module.exports = ProductManager;
