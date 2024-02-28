@@ -39,7 +39,7 @@ class ProductManager {
             console.error("Error al agregar el producto:", error);
         }
     }
-
+// obtenr el producto por id
     async getProductById(id) {
         try {
             const productos = await this.getProduct();
@@ -50,7 +50,7 @@ class ProductManager {
             return null;
         }
     }
-
+// actualizar productos por id y agregando el dato a modificar
     async updateProduct(id, updatedFields) {
         try {
             let productos = await this.getProduct();
@@ -66,7 +66,7 @@ class ProductManager {
             return false;
         }
     }
-
+// borrar producto por id
     async deleteProduct(id) {
         try {
             let productos = await this.getProduct();
