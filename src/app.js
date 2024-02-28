@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
     res.send("Servidor básico");
 });
 
- const products = new ProductManager("productos.json");
+ const products = new ProductManager("./src/data/productos.json");
  
 app.get('/products/:pid', async (req, res) => {
      const productos = parseInt(req.params.pid);
