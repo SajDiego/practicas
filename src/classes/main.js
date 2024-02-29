@@ -29,7 +29,7 @@ class ProductManager {
             const newId = id + 1;
 
             // Nuevo objeto de producto con el nuevo ID
-            const newProduct = { id: newId, title, description, price, thumbnail, code, stock }
+            const newProduct = {id: newId, title, description, price, thumbnail, code, stock}
             
             productos.push(newProduct);
 
