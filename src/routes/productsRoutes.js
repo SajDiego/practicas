@@ -29,21 +29,7 @@ router.post('/', (req, res) => {
 
     res.status(201).json({ message: 'Producto agregado correctamente' });
 });
-/*
-router.post('/', (req, res) => {
-    const productManager = new ProductManager('productos.json');
-    const { title, description, price, thumbnails, code, stock,} = req.body;
 
-     if (!title || !description || !price|| !Array.isArray(thumbnails) || !code   || !stock ) {
-         return res.status(400).json({ error: 'debes completar todos los campos.' });
-    };
-
-    const newProduct = {title, description, code, stock, thumbnails};
-
-    productManager.addProduct(newProduct);
-
-    res.status(201).json({ message: 'Producto agregado correctamente', newProduct });
-});*/
 
 router.put('/:pid', (req, res) => {
     const productId = parseInt(req.params.pid);
